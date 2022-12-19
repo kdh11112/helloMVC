@@ -40,7 +40,7 @@ public class DoLogin extends HttpServlet {
 		CustomerService service = new CustomerService();
 		Customer customer = service.findCustomer(customerId);
 		request.setAttribute("customer123", customer);
-		
+		 
 		//We can iterate over lists using forEach in JSTL
 		List<Customer> customers = new ArrayList<>();
 		customers.add(new Customer("id006","Kim","kim@hansung.ac.kr"));

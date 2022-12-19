@@ -22,7 +22,7 @@ public class CustomerService {
 	public void addCustomer(Customer customer) {
 		customers.put(customer.getId(), customer);
 	}
-	
+	 
 	public Customer findCustomer(String id) {
 		if(id != null) {
 			return (customers.get(id));
